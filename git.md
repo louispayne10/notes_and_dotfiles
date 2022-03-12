@@ -1,6 +1,7 @@
 This is about git the vcs.
 
 - [Staging and commiting files](#staging-and-commiting-files)
+- [Branches](#branches)
 - [Viewing history](#viewing-history)
   - [Viewing history for branches and remotes](#viewing-history-for-branches-and-remotes)
   - [Filter by time and frequency](#filter-by-time-and-frequency)
@@ -42,6 +43,26 @@ Reverting commits, this creates a new commit that is the opposite of a given com
 
         git revert HEAD      # revert latest commit
         git revert commit_id # revert specific commit
+
+## Branches
+
+        git branch             # list branches
+        git branch branch_name # create new branch
+        git checkout branch_name
+        git branch -d branch_name # delete branch
+
+To combine branches
+
+        git merge branch_name   # merge history of branch currently in with the branch_name
+        git rebase branch_name  # rebase history of branch currently in with the branch_name
+        git rebase -i  branch_name # interactive rebase
+        git mergetool # use configured merge tool to resolve conflicts
+
+Abort a merge/rebase after conflicts
+
+        git merge --abort
+        git rebase --abort
+        git rebase --continue # continue rebase after resolving conflicts
 
 ## Viewing history
 
