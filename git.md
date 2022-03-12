@@ -10,6 +10,7 @@ This is about git the vcs.
   - [Filter by text](#filter-by-text)
   - [Formatting](#formatting)
 - [Config](#config)
+  - [Notes on using vscode as editor/difftool/mergetool](#notes-on-using-vscode-as-editordifftoolmergetool)
 - [Keys, Signing and Authentication](#keys-signing-and-authentication)
   - [Creating SSH key for github](#creating-ssh-key-for-github)
   - [Signing commits with GPG key](#signing-commits-with-gpg-key)
@@ -140,6 +141,16 @@ Can add alias' with the config
 
         git config --global alias.unstage 'reset HEAD --'
         git unstage  # will work because of above
+
+### Notes on using vscode as editor/difftool/mergetool
+
+Have to use --wait flag, so run the following to get vscode as the editor etc.
+
+git config --global core.editor "code --wait"
+git config --global merge.tool code
+git config --global diff.tool code
+git config --global difftool.code.cmd "code --wait --diff $LOCAL $REMOTE"
+git config --global mergetool.code.cmd "code --wait $MERGED"
 
 ## Keys, Signing and Authentication
 
