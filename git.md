@@ -136,6 +136,11 @@ Git has a configuration that can be controlled on a system, global or per reposi
 
 The `git-config` man page lists all the possible options for the configuration.
 
+Can add alias' with the config
+
+        git config --global alias.unstage 'reset HEAD --'
+        git unstage  # will work because of above
+
 ## Keys, Signing and Authentication
 
 ### Creating SSH key for github
