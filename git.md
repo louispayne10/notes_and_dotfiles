@@ -2,6 +2,7 @@ This is about git the vcs.
 
 - [Staging and commiting files](#staging-and-commiting-files)
 - [Branches](#branches)
+- [Remotes](#remotes)
 - [Viewing history](#viewing-history)
   - [Viewing history for branches and remotes](#viewing-history-for-branches-and-remotes)
   - [Filter by time and frequency](#filter-by-time-and-frequency)
@@ -63,6 +64,14 @@ Abort a merge/rebase after conflicts
         git merge --abort
         git rebase --abort
         git rebase --continue # continue rebase after resolving conflicts
+
+## Remotes
+
+        git remote show origin             # see information about a remote
+        git push remote_name branch_name   # push changes to a remote
+        git fetch remote_name              # download data from remote
+        git pull remote_name               # does a fetch and then tries to merge/rebase it
+        git merge origin/main              # merge remote repo with a local one
 
 ## Viewing history
 
