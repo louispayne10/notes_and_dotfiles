@@ -1,8 +1,44 @@
 This is about git the vcs.
 
+- [Viewing history](#viewing-history)
+  - [Viewing history for branches and remotes](#viewing-history-for-branches-and-remotes)
+  - [Filter by time and frequency](#filter-by-time-and-frequency)
+  - [Filter by text](#filter-by-text)
+  - [Formatting](#formatting)
 - [Keys, Signing and Authentication](#keys-signing-and-authentication)
   - [Creating SSH key for github](#creating-ssh-key-for-github)
   - [Signing commits with GPG key](#signing-commits-with-gpg-key)
+
+## Viewing history
+
+### Viewing history for branches and remotes
+
+        git log
+        git log branch_name
+        git log remote_name/branch_name
+
+### Filter by time and frequency
+
+        git log -n 4           # last 4 commits
+        git log --max-count=4  # last 4 commits
+        git log --skip=2       # skip the first 2 commits
+        git log --since="1 week ago"
+        git log --until="yesterday"
+        git log --author="Louis"
+        git log --committer="Louis"
+
+### Filter by text
+
+        git log --grep="Fix stuttering"    # grep commit message
+        git log -S"std::cout"              # grep code
+        git log -G"std::*"                 # grep code (regex)
+        git log -- file_name.txt           # filter by file
+
+### Formatting
+
+        git log --oneline
+        git log --abbrev-commit
+        git log --graph
 
 ## Keys, Signing and Authentication
 
