@@ -91,6 +91,10 @@ Abort a merge/rebase after conflicts
         git log branch_name
         git log remote_name/branch_name
 
+For information about a specific commit
+
+        git show commit_id
+
 ### Filter by time and frequency
 
         git log -n 4           # last 4 commits
@@ -113,6 +117,8 @@ Abort a merge/rebase after conflicts
         git log --oneline
         git log --abbrev-commit
         git log --graph
+        git log -p                # get the patch for each commit
+        git log --stat            # print additional stats about each commit
 
 ## Config
 
