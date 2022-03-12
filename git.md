@@ -3,6 +3,7 @@ This is about git the vcs.
 - [Staging and commiting files](#staging-and-commiting-files)
 - [Branches](#branches)
 - [Remotes](#remotes)
+- [Stash](#stash)
 - [Viewing history](#viewing-history)
   - [Viewing history for branches and remotes](#viewing-history-for-branches-and-remotes)
   - [Filter by time and frequency](#filter-by-time-and-frequency)
@@ -72,6 +73,15 @@ Abort a merge/rebase after conflicts
         git fetch remote_name              # download data from remote
         git pull remote_name               # does a fetch and then tries to merge/rebase it
         git merge origin/main              # merge remote repo with a local one
+
+## Stash
+
+        git stash list
+        git stash clear
+        git stash
+        git stash pop
+        git stash drop stash_id
+        git stash apply --index 2
 
 ## Viewing history
 
