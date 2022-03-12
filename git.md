@@ -117,3 +117,7 @@ in this output take the `3AA5C34371567BD2` and substitue it in the following
 6) Can sign by default by configuring
 
         git config --global commit.gpgsign true
+
+Alternatively the `-S` flag for `git commit` will sign the commit. 
+
+> When pull requests are merged/rebased on third party platforms they may not always keep the commit as signed. See [this](https://github.com/github/hub/issues/1241) issue on github about this.
