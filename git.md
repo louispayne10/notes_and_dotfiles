@@ -5,6 +5,7 @@ This is about git the vcs.
   - [Filter by time and frequency](#filter-by-time-and-frequency)
   - [Filter by text](#filter-by-text)
   - [Formatting](#formatting)
+- [Config](#config)
 - [Keys, Signing and Authentication](#keys-signing-and-authentication)
   - [Creating SSH key for github](#creating-ssh-key-for-github)
   - [Signing commits with GPG key](#signing-commits-with-gpg-key)
@@ -39,6 +40,22 @@ This is about git the vcs.
         git log --oneline
         git log --abbrev-commit
         git log --graph
+
+## Config
+
+Git has a configuration that can be controlled on a system, global or per repository basis (local). They override eachother with `local > global > system`. Local is for a specific repository. Global is for a user on a system. System is for all users on a system. The local config is in `.git/config`, the global config is in `~/.gitconfig` and the system config is at `/etc/gitconfig`.
+
+        git config --global --list                   # list all global config
+        git config --list --show-origin
+        git config --local --list
+        git config --system --list
+        git config --global user.name "Louis Payne"  # Set global name
+        git config --global user.email "a@example.com"
+        git config --global core.editor vim
+        git config --global commit.gpgsign true
+        git config --global pull.rebase true
+
+The `git-config` man page lists all the possible options for the configuration.
 
 ## Keys, Signing and Authentication
 
