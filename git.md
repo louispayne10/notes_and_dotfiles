@@ -1,5 +1,6 @@
 This is about git the vcs.
 
+- [Staging and commiting files](#staging-and-commiting-files)
 - [Viewing history](#viewing-history)
   - [Viewing history for branches and remotes](#viewing-history-for-branches-and-remotes)
   - [Filter by time and frequency](#filter-by-time-and-frequency)
@@ -9,6 +10,38 @@ This is about git the vcs.
 - [Keys, Signing and Authentication](#keys-signing-and-authentication)
   - [Creating SSH key for github](#creating-ssh-key-for-github)
   - [Signing commits with GPG key](#signing-commits-with-gpg-key)
+
+## Staging and commiting files
+
+Viewing staged/unstaged changes
+
+        git status
+        git diff
+        git diff myfile.txt
+        git diff --staged
+
+Adding changes
+        git add .
+        git add -p      # open a prompt and asks if you want to stage changes or not
+        git add -i      # interactively add changes
+
+Removing changes, `git reset` will unstage changes and remove commits but not delete work. `git reset --hard` will discard changes and remove and discard commits:
+
+        git reset HEAD # reset all staged changes
+        git reset HEAD filename
+        git reset HEAD -p # interactively pick changes to reset
+        git checkout filename # discard local changes in a specific file
+        git reset --hard HEAD  # discard all local changes in working directory
+
+Commiting:
+
+        git commit -m "commit message"
+        git commit --amend
+
+Reverting commits, this creates a new commit that is the opposite of a given commit:
+
+        git revert HEAD      # revert latest commit
+        git revert commit_id # revert specific commit
 
 ## Viewing history
 
