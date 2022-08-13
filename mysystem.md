@@ -29,7 +29,7 @@ TODO: make sure locales work once installed!
 * Audio: `pulseaudio` 
   * TODO: look into this (`pipewire`?)
 * Screen locker:
-  * TODO: `i3lock-color`?
+  * TODO: `i3lock-color`? ([see this for info on stuff](https://www.reddit.com/r/i3wm/comments/9ebemt/locking_i3_when_lid_of_laptop_is_closed/e5npbhp/))
 
 ### Other (less) core bits of software:
 * `git`
