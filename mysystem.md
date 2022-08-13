@@ -49,7 +49,7 @@ IDE: vscode?
 browser: firefox?
 notifications?: dunst?
 keychain?/password manager?:
-auto-cpufreq for power?
+auto-cpufreq for power? ([power management in general](https://wiki.archlinux.org/title/Power_management))
 libreoffice?
 discord/spotify
 cmus?
