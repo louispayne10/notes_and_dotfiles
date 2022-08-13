@@ -12,7 +12,7 @@ TODO: make sure locales work once installed!
   * TODO: exit? `i3exit`?
 * Status bar: `i3bar`
   * TODO: look into `polybar` and `i3-status-rust`
-* launcher: `dmenu`
+* launcher: `dmenu` (or `rofi`?)
 * Compositor: `xcompmgr`
 * Desktop background: TODO: `nitrogen` or `feh`?
 * Init System: `systemd`
