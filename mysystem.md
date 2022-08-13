@@ -22,7 +22,7 @@ TODO: make sure locales work once installed!
 * Shell: `bash`
   * TODO: make sure tab completion is working
   * TODO: cool bash prompt?
-* Display manager:
+* Display manager: `lightdm`?
 * File manager:
   * TODO: look into (`caja`, `thunar`, `nautilus`) (TUI file manager? ranger?)
 * Bootloader: `grub`
