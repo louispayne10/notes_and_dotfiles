@@ -14,7 +14,7 @@ Generally [the arch wiki](https://wiki.archlinux.org/title/installation_guide) i
 4) vdi harddisk + dynamically allocated, give it a size
 5) Click _settings_ for the VM
 6) System -> Enable EFI -> Processor -> Give it some CPU
-7) Display -> Give it video memory (128m) + enable 3d acceleration
+7) Display -> Give it video memory (128m) + enable 3d acceleration if hardware supports it! (Dont do this on laptop without GPU)
 8) Storage -> Add optical -> Add arch ISO 
 
 The VM can be launched now as if it was from a live ISO (the optical disk). (Note for laptop preferences -> display -> scaling can be useful). See below how to setup it up from here - same as boot medium.

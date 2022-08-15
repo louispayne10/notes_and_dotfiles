@@ -2,23 +2,26 @@ This contains a list of software that I like on my system.
 
 I'd like at some point to have a script that takes a base arch linux install and installs all of these while copying over my dotfiles and configurations for all the software, that would be ideal :)
 
-TODO: make sure locales work once installed!
+The archinstall script seems to get locales wrong (at least mine) which causes issues. To fix this edit `/etc/locale.gen` so the `GB` locale says `en_GB.UTF-8 UTF-8` and then edit `/etc/locale.conf` and change the contents to `LANG=en_GB.UTF-8` and then reboot the machine.
 
 ### Core components:
 
 * Display Server: `X11`
-* Window manager: `i3wm`
-  * TODO: Look into `i3-gaps`
-  * TODO: exit? `i3exit`?
+* Window manager: `i3-gaps`
+  * [i3 cheatsheet](https://i3wm.org/docs/refcard.html)
+  * [i3 userguide](https://i3wm.org/docs/userguide.html)
+  * [i3-gaps guide](https://github.com/Airblader/i3)
+  * [`pywal`](https://github.com/dylanaraps/pywal/wiki) for theming in an easy way (the wiki has ways to setup it up nicely)
 * Status bar: `i3bar`
-  * TODO: look into `polybar` and `i3-status-rust`
+  * TODO: look into `polybar` and `i3-status-rust` and `i3-blocks`
 * launcher: `dmenu` (or `rofi`?)
 * Compositor: `xcompmgr`
-* Desktop background: TODO: `nitrogen` or `feh`?
+* Desktop background: `nitrogen`
 * Init System: `systemd`
   * Also use for ntp, logging and much more
 * Nework Sofware: `NetworkManager`
-* Terminal: `kitty`
+* Terminal: [`kitty`](https://sw.kovidgoyal.net/kitty/overview/)
+  * Add `alias icat="kitty +kitten icat"` into .bashrc super cool way to "cat" images in the terminal
 * Shell: `bash`
   * TODO: make sure tab completion is working
   * TODO: cool bash prompt?
@@ -29,13 +32,16 @@ TODO: make sure locales work once installed!
 * Audio: `pulseaudio` 
   * TODO: look into this (`pipewire`?)
 * Screen locker:
+  * `i3-lock` + `i3exit` stuff in i3 config
   * TODO: `i3lock-color`? ([see this for info on stuff](https://www.reddit.com/r/i3wm/comments/9ebemt/locking_i3_when_lid_of_laptop_is_closed/e5npbhp/))
+  * `xss-lock`?
 
 ### Other (less) core bits of software:
 * `git`
 * `vim`
   * TODO: `neovim`?
 * `sudo`
+* `man-db`
 
 Unknowns:
 calculator: kcalc?
@@ -72,7 +78,13 @@ Pomodoro timer? tomato?
 Touch typing software?
 figlet!
 
+### Software to consider
+
+* [`wpgtk`](https://github.com/deviantfero/wpgtk/wiki/Installation) to manage `pywal` themes
+* More advanced compositors like `picom` as `xcompmgr` is very simple
+* `feh` instead of nitrogen
+
 ### Notes
 
-* The compositor `xcompmgr` is very simple, more advanced ones that have more features like `picom` exist but this works for now
-* [arch wiki on framework](https://wiki.archlinux.org/title/Framework_Laptop) 
+* [arch wiki on framework](https://wiki.archlinux.org/title/Framework_Laptop)
+* [This archwiki about autostarting](https://wiki.archlinux.org/title/Autostarting) is interesting about getting stuff to run in the background automatically at the right 'scope'.
