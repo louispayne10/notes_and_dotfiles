@@ -64,7 +64,7 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * auto-cpufreq for power? ([power management in general](https://wiki.archlinux.org/title/Power_management))
 * libreoffice?
 * discord/spotify
-* music cmus?
+* music cmus? deadbeef?
 * screenshot tool? maim/scrot?
 * qemu/virtualbox?
 * gcc/binutils + other dev tools like curl/wget cmake kcachegrind valgrind
@@ -82,6 +82,7 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * Touch typing software?
 * figlet!
 * peek - screen recorder?
+* cfdisk
 
 ### Can only do once on laptop
 
