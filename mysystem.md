@@ -21,19 +21,19 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
   * Also use for ntp, logging and much more
 * Nework Sofware: `NetworkManager`
 * Terminal: [`kitty`](https://sw.kovidgoyal.net/kitty/overview/)
-  * TODO: configure tabs etc
 * Shell: `bash`
-  * TODO: Fix `PS1` causing issues in `.bashrc` (Or use `starship`?)
-  * TODO: make sure tab completion is working (seems to with somethings but not git?)
+  * install `bash-completion` for completion to work properly
+  * install `pkgfile` and run `pkgfile -u` to get told where missing packages are + `systemctl enable pkgfile-update.timer` so it updates automatically
 * Display manager: `lightdm`
   * use `lightdm-webkit2-greeter` with [`aether theme`](https://github.com/NoiSek/Aether)
 * File manager:
-  * TODO: look into (`caja`, `thunar`, `nautilus`) (TUI file manager? ranger?)
+  * `pcmanfm` for a GUI
+  * [`ranger`](https://github.com/ranger/ranger/wiki/Official-user-guide) for a CLI based (install `python-pillow` for image preview)
 * Bootloader: `grub`
 * Audio: `pulseaudio`
   * if i seem to have issues - try `pipewire` 
 * Screen locker:
-  * `i3-lock-color` (TODO: theme it from `wal`)
+  * `i3-lock-color`
   * `xss-lock`
 
 ### Other (less) core bits of software:
@@ -44,11 +44,15 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * `man-db`
 * `bluez`,`bluez-utils` and [polybar](https://github.com/msaitz/polybar-bluetooth) for [bluetooth](https://wiki.archlinux.org/title/bluetooth)
 * `yay` as an AUR helper?
+* `xdg-open`
 
 ### Unknowns
 
-* calculator: kcalc?
 * polkit: lxqt-policykit?
+* notifications?: dunst?
+* clipboard manager? clipmenu?
+
+* calculator: kcalc?
 * font viewer (`font-manager`)
 * Media player: VLC or mpv?
 * Image viewer: viewnior?
@@ -56,14 +60,12 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * debugger: Seer? gdbfrontend?
 * IDE: vscode?
 * browser: firefox?
-* notifications?: dunst?
 * keychain?/password manager?:
 * auto-cpufreq for power? ([power management in general](https://wiki.archlinux.org/title/Power_management))
 * libreoffice?
 * discord/spotify
-* cmus?
+* music cmus?
 * screenshot tool? maim/scrot?
-* clipboard manager? clipmenu?
 * qemu/virtualbox?
 * gcc/binutils + other dev tools like curl/wget cmake kcachegrind valgrind
 * fprint for finger print?
@@ -81,6 +83,13 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * figlet!
 * peek - screen recorder?
 
+### Can only do once on laptop
+
+* Setup brightness, bluetooth and wifi on polybar
+* Setup bluetooth manageer (blueman)
+* Proper power settings
+* fprint
+
 ### Software to consider in future
 
 * [`wpgtk`](https://github.com/deviantfero/wpgtk/wiki/Installation) to manage `pywal` themes
@@ -88,6 +97,7 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * `feh` instead of nitrogen
 * Different shells instead of `bash` like `zsh`
 * `alacritty` instead of `kitty`
+* `starship` to customise shell prompt
 
 ### Notes
 
