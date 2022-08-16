@@ -7,11 +7,6 @@
 
 alias ls='ls --color=auto'
 
-# source installed bash-completions
-#for f in /usr/share/bash-completion/completions/*; do
-  #source $f;
-#done
-
 # sources colours we can use as variables
 . ~/.cache/wal/colors.sh
 
