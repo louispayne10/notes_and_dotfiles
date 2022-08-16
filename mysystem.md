@@ -98,6 +98,7 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * Different shells instead of `bash` like `zsh`
 * `alacritty` instead of `kitty`
 * `starship` to customise shell prompt
+* Consider not using a display manager and going straight into the wm
 
 ### Notes
 
