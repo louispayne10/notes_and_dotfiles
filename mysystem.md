@@ -35,23 +35,25 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * Screen locker:
   * `i3-lock-color`
   * `xss-lock`
+* Polkit: `lxqt-policykit`?
+* notifications: `dunst`?
 
-### Other (less) core bits of software:
-* `git`
-* `vim`
-  * TODO: `neovim`?
+
+### Other (less) major bits of system software:
+
 * `sudo`
 * `man-db`
-* `bluez`,`bluez-utils` and [polybar](https://github.com/msaitz/polybar-bluetooth) for [bluetooth](https://wiki.archlinux.org/title/bluetooth)
-* `yay` as an AUR helper?
-* `xdg-open`
+* `yay`
+* `xdg-open` (look into)
+* clipboard manager? `clipmenu`?
+* auto-cpufreq for power? ([power management in general](https://wiki.archlinux.org/title/Power_management))
+* fprint for finger print?
 
-### Unknowns
+### Other 'normal' software
 
-* polkit: lxqt-policykit?
-* notifications?: dunst?
-* clipboard manager? clipmenu?
-
+* `git`
+* `vim`
+* TODO: `neovim`?
 * calculator: kcalc?
 * font viewer (`font-manager`)
 * Media player: VLC or mpv?
@@ -61,14 +63,12 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * IDE: vscode?
 * browser: firefox?
 * keychain?/password manager?:
-* auto-cpufreq for power? ([power management in general](https://wiki.archlinux.org/title/Power_management))
 * libreoffice?
 * discord/spotify
 * music cmus? deadbeef?
 * screenshot tool? maim/scrot?
 * qemu/virtualbox?
 * gcc/binutils + other dev tools like curl/wget cmake kcachegrind valgrind
-* fprint for finger print?
 * google drive drivesync?
 * volume control? like kmix?
 * webcam software - cheese?
@@ -92,12 +92,14 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * Setup bluetooth manageer (blueman)
 * Proper power settings
 * fprint
+* `bluez`,`bluez-utils` and [polybar](https://github.com/msaitz/polybar-bluetooth) for [bluetooth](https://wiki.archlinux.org/title/bluetooth)
 
 ### Software to consider in future
 
+* Have an easy way to skip bootloader + display manager to boot faster
 * [`wpgtk`](https://github.com/deviantfero/wpgtk/wiki/Installation) to manage `pywal` themes
 * `feh` instead of nitrogen
-* Different shells instead of `bash` like `zsh`
+* Different shells instead of `bash` like `zsh` or `fish`
 * `alacritty` instead of `kitty`
 * `starship` to customise shell prompt
 * Consider not using a display manager and going straight into the wm
