@@ -15,7 +15,7 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * Status bar: `polybar`
 * launcher: `rofi`
   * Also use `rofimoji` as emoji picker (needs `xdotool` to work) make sure `noto-fonts-emoji` is installed
-* Compositor: `xcompmgr`
+* Compositor: `picom`
 * Desktop background: `nitrogen`
 * Init System: `systemd`
   * Also use for ntp, logging and much more
@@ -96,7 +96,6 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 ### Software to consider in future
 
 * [`wpgtk`](https://github.com/deviantfero/wpgtk/wiki/Installation) to manage `pywal` themes
-* More advanced compositors like `picom` as `xcompmgr` is very simple
 * `feh` instead of nitrogen
 * Different shells instead of `bash` like `zsh`
 * `alacritty` instead of `kitty`

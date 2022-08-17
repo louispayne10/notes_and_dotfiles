@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # compositor - for transparent coolness
-xcompmgr &
+# xcompmgr &
+picom & --config="$HOME/.config/picom/picom.conf"
 
 # wal will do this for us with the correct wallpaper
 # nitrogen --restore
