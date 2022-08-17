@@ -54,6 +54,7 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * `git`
 * `vim`
 * TODO: `neovim`?
+* `locate` (TODO: setup)
 * calculator: kcalc?
 * font viewer (`font-manager`)
 * Media player: VLC or mpv?
