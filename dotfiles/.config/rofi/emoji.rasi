@@ -1,0 +1,14 @@
+@theme "fancy"
+
+@import "~/.cache/wal/colors-rofi-dark"
+
+configuration {
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+}
+
+window {
+	transparency: "real";
+}

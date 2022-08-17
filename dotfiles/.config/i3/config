@@ -181,7 +181,10 @@ gaps outer 32
 smart_borders on
 smart_gaps inverse_outer
 
-bindsym $mod+F12 exec "rofi -show p -modi p:$HOME/.config/rofi/rofi-power-menu.sh -theme-str 'listview {lines: 6;scrollbar:false;}' -theme-str 'window {width:25%;}' -theme-str 'prompt {enabled:false;}' -theme-str 'textbox-prompt-colon {enabled:false;}' -theme-str 'entry {placeholder:\\"\\";}' -theme-str 'button {enabled:false;}'"
+set $rofi ~/.config/rofi/launch.sh
+
+bindsym $mod+F12 exec $rofi powermenu
+
 
 # for integration with pywal - automatic themeing
 # see https://github.com/dylanaraps/pywal/wiki/Customization#i3
@@ -198,8 +201,8 @@ client.placeholder      $bg     $bg     $fg  $bg       $bg
 client.background       $bg
 
 # A more modern dmenu replacement is rofi:
-bindsym $mod+d exec rofi -show
-bindsym $mod+p exec rofimoji
+bindsym $mod+d exec $rofi appmenu
+bindsym $mod+p exec $rofi emoji
 
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
