@@ -74,7 +74,7 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * webcam software - cheese?
 * kompare diff tool?
 * hexeditor?
-* conky - system monitor?
+* conky - system monitor? stacer
 * filelight - disk usage display?
 * System information viewers - like neofetch?
 * dnote for notes? devtodo for todos?
@@ -83,6 +83,8 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * figlet!
 * peek - screen recorder?
 * cfdisk
+* htop
+* gimp
 
 ### Can only do once on laptop
 
