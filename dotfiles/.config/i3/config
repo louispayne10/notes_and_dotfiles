@@ -212,4 +212,5 @@ bindsym $mod+p exec $rofi emoji
 # bindsym $mod+d exec dmenu_run -nb "$fg" -nf "$bg" -sb "$bg" -sf "$fg"
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec --no-startuo-id /usr/bin/dunst
 
