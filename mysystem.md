@@ -16,6 +16,7 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * launcher: `rofi`
   * Also use `rofimoji` as emoji picker (needs `xdotool` to work) make sure `noto-fonts-emoji` is installed
 * Compositor: `picom`
+  * TODO: See if blur works with glx backend on real hardware
 * Desktop background: `nitrogen`
 * Init System: `systemd`
   * Also use for ntp, logging and much more
@@ -43,7 +44,7 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 
 * `sudo`
 * `man-db`
-* `yay`
+* `yay` - AUR helper
 * `xdg-open` (look into)
 * clipboard manager? `clipmenu`?
 * auto-cpufreq for power? ([power management in general](https://wiki.archlinux.org/title/Power_management))
@@ -55,8 +56,10 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * `vim`
 * TODO: `neovim`?
 * `locate` (TODO: setup)
+* `tldr`
 * calculator: kcalc?
-* font viewer (`font-manager`)
+* `font-manager` for managing fonts
+* fonts: `nerd-fonts`
 * Media player: VLC or mpv?
 * Image viewer: viewnior?
 * pdf viewer: mupdf?
@@ -66,7 +69,7 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * keychain?/password manager?:
 * libreoffice?
 * discord/spotify
-* music cmus? deadbeef?
+* music cmus? deadbeef? mpd + mpd in polybar?
 * screenshot tool? maim/scrot?
 * qemu/virtualbox?
 * gcc/binutils + other dev tools like curl/wget cmake kcachegrind valgrind
