@@ -61,7 +61,7 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * Image viewer: viewnior?
 * pdf viewer: mupdf?
 * debugger: Seer? gdbfrontend?
-* IDE: vscode?
+* IDE: vscode?/qtcreator?/clion?/neovim?
 * browser: firefox?
 * keychain?/password manager?:
 * libreoffice?
