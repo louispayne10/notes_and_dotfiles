@@ -46,9 +46,8 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * `man-db`
 * `yay` - AUR helper
 * `xdg-open` (look into)
-* clipboard manager? `clipmenu`?
+* clipboard manager? `copyq`?
 * auto-cpufreq for power? ([power management in general](https://wiki.archlinux.org/title/Power_management))
-* fprint for finger print?
 * `papirus-icon-theme` from AUR
 
 ### Other 'normal' software
@@ -82,7 +81,7 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * conky - system monitor? stacer
 * filelight - disk usage display?
 * System information viewers - like neofetch?
-* dnote for notes? devtodo for todos?
+* dnote/joplin for notes? devtodo for todos?
 * Pomodoro timer? tomato?
 * Touch typing software?
 * figlet!
@@ -93,11 +92,12 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 
 ### Can only do once on laptop
 
-* Setup brightness, bluetooth and wifi on polybar
+* Setup volume, brightness, bluetooth and wifi on polybar (maybe have notifications when these change)
 * Setup bluetooth manageer (blueman)
 * Proper power settings
-* fprint
+* fprint for finger print?
 * `bluez`,`bluez-utils` and [polybar](https://github.com/msaitz/polybar-bluetooth) for [bluetooth](https://wiki.archlinux.org/title/bluetooth)
+* make multimonitor support work (might need to use `xrandr` to get it working)
 
 ### Software to consider in future
 
