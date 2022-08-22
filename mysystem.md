@@ -13,7 +13,7 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
   * [i3-gaps guide](https://github.com/Airblader/i3)
   * [`pywal`](https://github.com/dylanaraps/pywal/wiki) for theming in an easy way (the wiki has ways to setup it up nicely)
 * Status bar: `polybar`
-* launcher: `rofi`
+* launcher: `rofi` (TODO: fully customisze using a theme)
   * Also use `rofimoji` as emoji picker (needs `xdotool` to work) make sure `noto-fonts-emoji` is installed
 * Compositor: `picom`
   * TODO: See if blur works with glx backend on real hardware
@@ -36,8 +36,8 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * Screen locker:
   * `i3-lock-color`
   * `xss-lock`
-* Polkit: `lxqt-policykit`?
-* notifications: `dunst`?
+* Polkit: `polkit`,`lxqt-policykit`,`polkit-explorer-git`
+* notifications: `dunst`
 
 
 ### Other (less) major bits of system software:
@@ -49,6 +49,7 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * clipboard manager? `clipmenu`?
 * auto-cpufreq for power? ([power management in general](https://wiki.archlinux.org/title/Power_management))
 * fprint for finger print?
+* `papirus-icon-theme` from AUR
 
 ### Other 'normal' software
 
