@@ -95,7 +95,7 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 
 * Setup volume, brightness, bluetooth and wifi on polybar (maybe have notifications when these change)
 * Setup bluetooth manageer (blueman)
-* Proper power settings `cpupower` 
+* Proper power settings `cpupower` `powertop` (https://community.frame.work/t/linux-battery-life-tuning/6665/174?page=8)
 * fprint for finger print?
 * `bluez`,`bluez-utils` and [polybar](https://github.com/msaitz/polybar-bluetooth) for [bluetooth](https://wiki.archlinux.org/title/bluetooth)
 * make multimonitor support work (might need to use `xrandr` to get it working)
