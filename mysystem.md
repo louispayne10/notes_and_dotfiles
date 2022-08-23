@@ -1,4 +1,5 @@
 TODO: split this repo into notes and dotfiles separately - but keep this file in with the dot files
+TODO: create a wallpapers repo
 This contains a list of software that I like on my system.
 
 I'd like at some point to have a script that takes a base arch linux install and installs all of these while copying over my dotfiles and configurations for all the software, that would be ideal :)
