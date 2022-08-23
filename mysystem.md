@@ -1,3 +1,4 @@
+TODO: split this repo into notes and dotfiles separately - but keep this file in with the dot files
 This contains a list of software that I like on my system.
 
 I'd like at some point to have a script that takes a base arch linux install and installs all of these while copying over my dotfiles and configurations for all the software, that would be ideal :)
@@ -94,7 +95,7 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 
 * Setup volume, brightness, bluetooth and wifi on polybar (maybe have notifications when these change)
 * Setup bluetooth manageer (blueman)
-* Proper power settings
+* Proper power settings `cpupower` 
 * fprint for finger print?
 * `bluez`,`bluez-utils` and [polybar](https://github.com/msaitz/polybar-bluetooth) for [bluetooth](https://wiki.archlinux.org/title/bluetooth)
 * make multimonitor support work (might need to use `xrandr` to get it working)
