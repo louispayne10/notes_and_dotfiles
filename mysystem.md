@@ -22,7 +22,7 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * Init System: `systemd`
   * Also use for ntp, logging and much more
 * Nework Sofware: `NetworkManager`
-* Terminal: [`kitty`](https://sw.kovidgoyal.net/kitty/overview/)
+* Terminal: [`kitty`](https://sw.kovidgoyal.net/kitty/overview/) (TODO: pick better font)
 * Shell: `bash`
   * install `bash-completion` for completion to work properly
   * install `pkgfile` and run `pkgfile -u` to get told where missing packages are + `systemctl enable pkgfile-update.timer` so it updates automatically
@@ -54,7 +54,7 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 ### Other 'normal' software
 
 * `git`
-* `vim`
+* `vim` (https://www.youtube.com/watch?v=_NUO4JEtkDw)
 * TODO: `neovim`?
 * `locate` (TODO: setup)
 * `tldr`
@@ -71,7 +71,7 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * libreoffice?
 * discord/spotify
 * music cmus? deadbeef? mpd + mpd in polybar?
-* screenshot tool? maim/scrot?
+* screenshot tool? maim/scrot? flameshot?
 * qemu/virtualbox?
 * gcc/binutils + other dev tools like curl/wget cmake kcachegrind valgrind
 * google drive drivesync?
@@ -98,7 +98,7 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * Proper power settings `cpupower` `powertop` (https://community.frame.work/t/linux-battery-life-tuning/6665/174?page=8)
 * fprint for finger print?
 * `bluez`,`bluez-utils` and [polybar](https://github.com/msaitz/polybar-bluetooth) for [bluetooth](https://wiki.archlinux.org/title/bluetooth)
-* make multimonitor support work (might need to use `xrandr` to get it working)
+* make multimonitor support work (might need to use `xrandr` to get it working - use rofi for menu - https://www.youtube.com/watch?v=wu2NWw2wPaA)
 
 ### Software to consider in future
 
