@@ -55,7 +55,7 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 ### Other 'normal' software
 
 * `git`
-* `vim` (https://www.youtube.com/watch?v=_NUO4JEtkDw)
+* `vim` (https://www.youtube.com/watch?v=_NUO4JEtkDw) (`xset` to change repeat delay)
 * TODO: `neovim`?
 * `locate` (TODO: setup)
 * `tldr`
