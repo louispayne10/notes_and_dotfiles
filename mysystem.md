@@ -14,6 +14,7 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
   * [i3 userguide](https://i3wm.org/docs/userguide.html)
   * [i3-gaps guide](https://github.com/Airblader/i3)
   * [`pywal`](https://github.com/dylanaraps/pywal/wiki) for theming in an easy way (the wiki has ways to setup it up nicely)
+  * TODO: setup keybindings to launch main pieces of software e.g browser
 * Status bar: `polybar`
 * launcher: `rofi` (TODO: fully customisze using a theme)
   * Also use `rofimoji` as emoji picker (needs `xdotool` to work) make sure `noto-fonts-emoji` is installed
@@ -23,21 +24,22 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * Init System: `systemd`
   * Also use for ntp, logging and much more
 * Nework Sofware: `NetworkManager`
-* Terminal: [`kitty`](https://sw.kovidgoyal.net/kitty/overview/) (TODO: pick better font)
+* Terminal: [`kitty`](https://sw.kovidgoyal.net/kitty/overview/)
 * Shell: `bash`
   * install `bash-completion` for completion to work properly
   * install `pkgfile` and run `pkgfile -u` to get told where missing packages are + `systemctl enable pkgfile-update.timer` so it updates automatically
 * Display manager: `lightdm`
   * use `lightdm-webkit2-greeter` with [`aether theme`](https://github.com/NoiSek/Aether)
+  * TODO: try a lighter weight one?
 * File manager:
   * `pcmanfm` for a GUI
   * [`ranger`](https://github.com/ranger/ranger/wiki/Official-user-guide) for a CLI based (install `python-pillow` for image preview)
 * Bootloader: `grub`
-* Audio: `pulseaudio`
-  * if i seem to have issues - try `pipewire` 
+* Audio: `pipewire`
 * Screen locker:
   * `i3-lock-color`
   * `xss-lock`
+  * TODO: configure autolock time + make sure it doesnt do it while audio is playing or fullscreen
 * Polkit: `polkit`,`lxqt-policykit`,`polkit-explorer-git`
 * notifications: `dunst`
 
@@ -45,10 +47,11 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 ### Other (less) major bits of system software:
 
 * `sudo`
-* `man-db`
+* `man-db` - manual pages
+* `tldr` - shorter man pages
 * `yay` - AUR helper
-* `xdg-open` (look into)
-* clipboard manager? `copyq`?
+* `xdg-open`
+* `greenclip` - clipboard manager with rofi (AUR `rofi-greenclip`)
 * auto-cpufreq for power? ([power management in general](https://wiki.archlinux.org/title/Power_management))
 * `papirus-icon-theme` from AUR
 
@@ -56,41 +59,44 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 
 * `git`
 * `vim` (https://www.youtube.com/watch?v=_NUO4JEtkDw) (`xset` to change repeat delay)
-* TODO: `neovim`?
-* `locate` (TODO: setup)
+* `neovim` (TODO: configure it)
+* `plocate` (make sure to enable to systemd service)
 * `tldr`
-* calculator: kcalc?
-* `font-manager` for managing fonts
-* fonts: `nerd-fonts`
-* Media player: VLC or mpv?
-* Image viewer: viewnior?
-* pdf viewer: mupdf?
-* debugger: Seer? gdbfrontend?
-* IDE: vscode?/qtcreator?/clion?/neovim?
-* browser: firefox?
-* keychain?/password manager?:
-* libreoffice?
-* discord/spotify
-* music cmus? deadbeef? mpd + mpd in polybar?
-* screenshot tool? maim/scrot? flameshot?
-* qemu/virtualbox?
-* gcc/binutils + other dev tools like curl/wget cmake kcachegrind valgrind
-* google drive drivesync?
-* volume control? like kmix?
-* webcam software - cheese?
-* kompare diff tool?
-* hexeditor?
-* conky - system monitor? stacer
-* filelight - disk usage display?
-* System information viewers - like neofetch?
-* dnote/joplin for notes? devtodo for todos?
+* calculator - `kcalc` GUI or `python` interpreter
+* font-manager - `font-manager`
+* fonts: `nerd-fonts`, `adobe-source-code-pro-fonts`, `opensans`, `notosans`,`freesans`,`freemono`
+* Media player - `vlc`,(+ `libmicrodns`,`protobuf` for chromecast) (use `mpv` as a backup) TODO: Test chromecast once on real hardware - see archwiki
+* Image viewer - `qview` (AUR)
+* pdf viewer - `zathura`,`zathura-pdf-mupdf`,`zathura-cb`,`zathura-djvu`
+* debugger - `seer` `gdbfrontend` `gdbgui` + try a non-graphical one like `cgdb` `gdbtui` or just `gdb` to learn about them
+* IDE - `neovim` `vscode`
+  * TODO: Give CLion, QtCreator a try
+* browser - `firefox`
+* office suite - `libreoffice`
+* screenshot tool - `flameshot`
+* hexeditor - `imhex`
+* system/process monitor - `conky` `htop`
+* virtual machines - `virtualbox`, `qemu` + `virtmanager`
+* color picker - `kcolorchooser`
+* screen recorder - `peek` for quick small gifs/vids, `obs-studio` for full recording
+* music - `cmus` `deadbeef` (AUR) `spotify` (TODO: mpd + mpd in polybar? basically get music working with polybar)
+* google drive - `drivesync` (AUR)
+* disk usage display - `filelight`
+* chat - `discord`
+* developer tools - `binutils` `cmake`
+* image editor - `gimp`
+* System information viewer - `neofetch`
+* text to ascii art - `figlet`
+* disk partitioner - `cfdisk`
+* diff tool - `meld` `vimdiff`
+* git gui - `vscode` or `vim` - can't find an OSS good gui
+* notes - `joplin`
+* todo tool - `devtodo`
 * Pomodoro timer? tomato?
 * Touch typing software?
-* figlet!
-* peek - screen recorder?
-* cfdisk
-* htop
-* gimp
+* volume control? like kmix?
+* webcam software - cheese?
+* keychain?/password manager?
 
 ### Can only do once on laptop
 
