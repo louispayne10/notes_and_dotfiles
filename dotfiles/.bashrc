@@ -5,14 +5,18 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
+alias ls='ls -lah --group-directories-first --color=auto'
+
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
 
 # sources colours we can use as variables
 . ~/.cache/wal/colors.sh
 
 # prompts
 if [[ -n $no_color_prompt ]]; then
-  PS1="[\u \$? \w]\$ "
+  PS1="[\$? \w]\$ "
 else
   # coloured getting colours from pywal
   # can set to background,foreground or color0..15
@@ -29,7 +33,7 @@ else
 
   prompt_color=${color13:1:6}
   pct=$(fromhex $prompt_color)
-  PS1="\[$(tput setaf $pct)\][\u \$? \w]\[$(tput sgr0)\]$ "
+  PS1="\[\$(tput setaf $pct)\][\$? \w]\[\$(tput sgr0)\]\[$(tput setaf 207)\]\$(parse_git_branch)\[\$(tput sgr0)\]\$ "
 fi
 
 # for catting images with kitty
@@ -38,4 +42,6 @@ alias kitdiff="kitty +kitten diff"
 alias kitclip="kitty +kitten clipboard"
 
 source /usr/share/doc/pkgfile/command-not-found.bash
+
+alias open="xdg-open"
 

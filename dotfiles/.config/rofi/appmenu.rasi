@@ -4,6 +4,7 @@
 
 configuration {
 	show-icons: true;
+	icon-theme: "Papirus";
 	display-window: "👁Workspaces";
 	display-drun: "🖥Apps";
 	display-filebrowser: "📂Files";
