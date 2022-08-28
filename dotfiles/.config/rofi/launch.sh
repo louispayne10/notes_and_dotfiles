@@ -3,9 +3,11 @@
 menu="$1"
 
 if [ "$menu" = "appmenu" ]; then
-    rofi -modi 'drun,window,filebrowser' -theme appmenu -show 
+    rofi -theme launcher-style -show drun 
 elif [ "$menu" = "powermenu" ]; then
-    rofi -modi 'Powermenu:~/.config/rofi/powermenu.sh' -show Powermenu -theme powermenu
+    uptime="`uptime -p | sed -e 's/up //g'`"
+    host=`hostname`
+    rofi -modi 'Powermenu:~/.config/rofi/powermenu.sh' -show Powermenu -theme powermenu-style
 elif [ "$menu" == "emoji" ]; then
     rofimoji --selector-args "-theme emoji"
 elif [ "$menu" == "clipboard" ]; then

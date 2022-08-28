@@ -75,7 +75,7 @@ bindsym $mod+Shift+l move right
 #bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+shift+v split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -96,6 +96,12 @@ bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
+
+# exec applications
+bindsym $mod+F1 exec firefox
+bindsym $mod+F2 exec pcmanfm
+bindsym $mod+F3 exec kitty nvim
+bindsym $mod+F4 exec peek
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -176,10 +182,10 @@ bindsym $mod+r mode "resize"
 for_window [class=".*"] border pixel 0
 
 # gaps 
-gaps inner 8
-gaps outer 32
-smart_borders on
-smart_gaps inverse_outer
+gaps inner 2
+#gaps outer 2
+#smart_borders on
+#smart_gaps inverse_outer
 
 set $rofi ~/.config/rofi/launch.sh
 
