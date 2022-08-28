@@ -45,3 +45,5 @@ source /usr/share/doc/pkgfile/command-not-found.bash
 
 alias open="xdg-open"
 
+# wait 300ms before repeating key press and then send that 35 times a second
+set r rate 300 35

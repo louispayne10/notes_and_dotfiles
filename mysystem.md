@@ -1,5 +1,5 @@
 TODO: split this repo into notes and dotfiles separately - but keep this file in with the dot files
-TODO: create a wallpapers repo
+TODO: rather than trying pywal with all the crazy color stuff just stick to a well known color scheme like dracula, gruvbox -- i really like gruvbox
 This contains a list of software that I like on my system.
 
 I'd like at some point to have a script that takes a base arch linux install and installs all of these while copying over my dotfiles and configurations for all the software, that would be ideal :)
@@ -14,12 +14,10 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
   * [i3 userguide](https://i3wm.org/docs/userguide.html)
   * [i3-gaps guide](https://github.com/Airblader/i3)
   * [`pywal`](https://github.com/dylanaraps/pywal/wiki) for theming in an easy way (the wiki has ways to setup it up nicely)
-  * TODO: setup keybindings to launch main pieces of software e.g browser
 * Status bar: `polybar`
-* launcher: `rofi` (TODO: fully customisze using a theme)
+* launcher: `rofi`
   * Also use `rofimoji` as emoji picker (needs `xdotool` to work) make sure `noto-fonts-emoji` is installed
 * Compositor: `picom`
-  * TODO: See if blur works with glx backend on real hardware
 * Desktop background: `nitrogen`
 * Init System: `systemd`
   * Also use for ntp, logging and much more
@@ -28,9 +26,7 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * Shell: `bash`
   * install `bash-completion` for completion to work properly
   * install `pkgfile` and run `pkgfile -u` to get told where missing packages are + `systemctl enable pkgfile-update.timer` so it updates automatically
-* Display manager: `lightdm`
-  * use `lightdm-webkit2-greeter` with [`aether theme`](https://github.com/NoiSek/Aether)
-  * TODO: try a lighter weight one?
+* Display manager: `ly`
 * File manager:
   * `pcmanfm` for a GUI
   * [`ranger`](https://github.com/ranger/ranger/wiki/Official-user-guide) for a CLI based (install `python-pillow` for image preview)
@@ -39,7 +35,6 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * Screen locker:
   * `i3-lock-color`
   * `xss-lock`
-  * TODO: configure autolock time + make sure it doesnt do it while audio is playing or fullscreen
 * Polkit: `polkit`,`lxqt-policykit`,`polkit-explorer-git`
 * notifications: `dunst`
 
@@ -58,19 +53,17 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 ### Other 'normal' software
 
 * `git`
-* `vim` (https://www.youtube.com/watch?v=_NUO4JEtkDw) (`xset` to change repeat delay)
+* `vim` (https://www.youtube.com/watch?v=_NUO4JEtkDw)
 * `neovim` (TODO: configure it)
-* `plocate` (make sure to enable to systemd service)
-* `tldr`
+* `plocate`
 * calculator - `kcalc` GUI or `python` interpreter
 * font-manager - `font-manager`
 * fonts: `nerd-fonts`, `adobe-source-code-pro-fonts`, `opensans`, `notosans`,`freesans`,`freemono`
-* Media player - `vlc`,(+ `libmicrodns`,`protobuf` for chromecast) (use `mpv` as a backup) TODO: Test chromecast once on real hardware - see archwiki
+* Media player - `vlc`,(+ `libmicrodns`,`protobuf` for chromecast) (use `mpv` as a backup)
 * Image viewer - `qview` (AUR)
 * pdf viewer - `zathura`,`zathura-pdf-mupdf`,`zathura-cb`,`zathura-djvu`
 * debugger - `seer` `gdbfrontend` `gdbgui` + try a non-graphical one like `cgdb` `gdbtui` or just `gdb` to learn about them
 * IDE - `neovim` `vscode`
-  * TODO: Give CLion, QtCreator a try
 * browser - `firefox`
 * office suite - `libreoffice`
 * screenshot tool - `flameshot`
@@ -79,8 +72,7 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * virtual machines - `virtualbox`, `qemu` + `virtmanager`
 * color picker - `kcolorchooser`
 * screen recorder - `peek` for quick small gifs/vids, `obs-studio` for full recording
-* music - `cmus` `deadbeef` (AUR) `spotify` (TODO: mpd + mpd in polybar? basically get music working with polybar)
-* google drive - `drivesync` (AUR)
+* music - `cmus` `deadbeef` (AUR) `spotify` (which client - the official one sucks?)
 * disk usage display - `filelight`
 * chat - `discord`
 * developer tools - `binutils` `cmake`
@@ -88,15 +80,13 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * System information viewer - `neofetch`
 * text to ascii art - `figlet`
 * disk partitioner - `cfdisk`
-* diff tool - `meld` `vimdiff`
+* diff tool - `meld` (should I?) `vimdiff`
 * git gui - `vscode` or `vim` - can't find an OSS good gui
 * notes - `joplin`
-* todo tool - `devtodo`
+* todo tool - `devtodo` (AUR)
 * Pomodoro timer? tomato?
-* Touch typing software?
 * volume control? like kmix?
 * webcam software - cheese?
-* keychain?/password manager?
 
 ### Can only do once on laptop
 
@@ -106,6 +96,10 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * fprint for finger print?
 * `bluez`,`bluez-utils` and [polybar](https://github.com/msaitz/polybar-bluetooth) for [bluetooth](https://wiki.archlinux.org/title/bluetooth)
 * make multimonitor support work (might need to use `xrandr` to get it working - use rofi for menu - https://www.youtube.com/watch?v=wu2NWw2wPaA)
+* See if blur works with glx backend on real hardware
+* configure autolock time + make sure it doesnt do it while audio is playing or fullscreen
+* Test chromecast once on real hardware - see archwiki
+* mpd + mpd in polybar? basically get music working with polybar
 
 ### Software to consider in future
 
@@ -116,6 +110,7 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * `alacritty` instead of `kitty`
 * `starship` to customise shell prompt
 * Consider not using a display manager and going straight into the wm
+* Give CLion, QtCreator a try
 
 ### Notes
 
