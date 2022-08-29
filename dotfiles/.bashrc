@@ -11,9 +11,6 @@ parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-# sources colours we can use as variables
-. ~/.cache/wal/colors.sh
-
 # prompts
 if [[ -n $no_color_prompt ]]; then
   PS1="[\$? \w]\$ "
