@@ -5,6 +5,8 @@
 
 set -xe
 
+cd ~
+
 # install all packages we need from pacman
 sudo pacman -S --needed base-devel git vim kitty polybar rofi noto-fonts-emoji xdotool picom nitrogen \
   bash-completion pkgfile pcmanfm ranger xss-lock polkit lxqt-policykit dunst man-db tldr neovim plocate \
