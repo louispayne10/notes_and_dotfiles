@@ -12,7 +12,7 @@ sudo pacman -S --needed base-devel git vim kitty polybar rofi noto-fonts-emoji x
   bash-completion pkgfile pcmanfm ranger xss-lock polkit lxqt-policykit dunst man-db tldr neovim plocate \
   font-manager python nerd-fonts adobe-source-code-pro-fonts ttf-opensans noto-fonts gnu-free-fonts vlc \
   libmicrodns protobuf mpv firefox libreoffice flameshot htop binutils rofimoji zathura zathura-pdf-mupdf \
-  zathura-cb zathura-djvu peek python-pywal python-pip kcalc gdb conky kcolorchooser cmus cmake discord \
+  zathura-cb zathura-djvu peek python-pip kcalc gdb conky kcolorchooser cmus cmake discord \
   gimp neofetch figlet clang ttf-iosevka-nerd
 
 if [ ! -d "notes_and_dotfiles" ]; then
@@ -53,6 +53,5 @@ sudo systemctl enable --now plocate-updatedb.timer
 # for displaying images in ranger
 pip install pillow
 
-# set a wallpaper + theme
-wal -i wallpapers/1024x768/005-spaceman_forest.jpg
-
+# set a wallpaper
+nitrogen --set-centered --save wallpapers/1920x1080/001-gruv-pacman-ghosts.png

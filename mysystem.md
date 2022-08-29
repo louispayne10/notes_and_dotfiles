@@ -1,5 +1,4 @@
 TODO: split this repo into notes and dotfiles separately - but keep this file in with the dot files
-TODO: rather than trying pywal with all the crazy color stuff just stick to a well known color scheme like dracula, gruvbox -- i really like gruvbox
 This contains a list of software that I like on my system.
 
 I'd like at some point to have a script that takes a base arch linux install and installs all of these while copying over my dotfiles and configurations for all the software, that would be ideal :)
@@ -13,7 +12,6 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
   * [i3 cheatsheet](https://i3wm.org/docs/refcard.html)
   * [i3 userguide](https://i3wm.org/docs/userguide.html)
   * [i3-gaps guide](https://github.com/Airblader/i3)
-  * [`pywal`](https://github.com/dylanaraps/pywal/wiki) for theming in an easy way (the wiki has ways to setup it up nicely)
 * Status bar: `polybar`
 * launcher: `rofi`
   * Also use `rofimoji` as emoji picker (needs `xdotool` to work) make sure `noto-fonts-emoji` is installed
@@ -104,7 +102,6 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 ### Software to consider in future
 
 * Have an easy way to skip bootloader + display manager to boot faster
-* [`wpgtk`](https://github.com/deviantfero/wpgtk/wiki/Installation) to manage `pywal` themes
 * `feh` instead of nitrogen
 * Different shells instead of `bash` like `zsh` or `fish`
 * `alacritty` instead of `kitty`
