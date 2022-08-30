@@ -25,11 +25,11 @@ fi
 # get yay our AUR helper
 if [ ! -d "yay" ]; then
   git clone https://aur.archlinux.org/yay.git
-  (cd yay && makepkg -si)
+  (cd yay && makepkg -si --noconfirm)
 fi
 
 # install AUR packages
-yay -S --needed --noconfirm ly i3lock-color rofi-greenclip papirus-icon-theme qview devtodo visual-studio-code-bin \
+yay -S --needed ly i3lock-color rofi-greenclip papirus-icon-theme qview devtodo visual-studio-code-bin \
   deadbeef tomato-git
 
 # create the screenshots directory for flameshot

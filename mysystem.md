@@ -73,7 +73,7 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * music - `cmus` `deadbeef` (AUR) `spotify` (which client - the official one sucks?)
 * disk usage display - `filelight`
 * chat - `discord`
-* developer tools - `binutils` `cmake`
+* developer tools - `binutils` `cmake` `valgrind` `kcachegrind` `wireshark`
 * image editor - `gimp`
 * System information viewer - `neofetch`
 * text to ascii art - `figlet`

@@ -4,16 +4,10 @@
 
 BLANK='#00000000'
 CLEAR='#ffffff22'
-#DEFAULT='#ddddddcc'
-#TEXT='#aaaaaa88'
-#WRONG='#880000bb'
-#VERIFYING='#bb00bbbb'
-
-. $HOME/.cache/wal/colors.sh
-DEFAULT="${background:1:6}CC"
-TEXT="${foreground:1:6}88"
-WRONG="FF${background:3:4}BB"
-VERIFYING="${color7:1:6}BB"
+DEFAULT='#ddddddcc'
+TEXT='#bbbbbbff'
+WRONG='#880000bb'
+VERIFYING='#bb00bbbb'
 
 i3lock \
 --insidever-color=$CLEAR     \
