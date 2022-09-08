@@ -35,3 +35,7 @@
 *color7:  #a89984
 *color15: #ebdbb2
 
+! highdpi settings - set to multiples of 96 e.g 192 for 200% scale
+!Xft.dpi: 192
+Xft.dpi: 144
+

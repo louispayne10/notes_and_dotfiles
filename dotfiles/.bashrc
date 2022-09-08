@@ -6,6 +6,7 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls -lah --group-directories-first --color=auto'
+alias l='\ls --color=auto'
 
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
@@ -16,7 +17,7 @@ if [[ -n $no_color_prompt ]]; then
   PS1="[\$? \w]\$ "
 else
   prompt_col=142
-  PS1="\[\$(tput setaf $prompt_col)\][\$? \w]\[\$(tput sgr0)\]\[$(tput setaf 132)\]\$(parse_git_branch)\[\$(tput sgr0)\]\$ "
+  PS1="\[\$(tput setaf $prompt_col)\][\w]\[\$(tput sgr0)\]\[$(tput setaf 132)\]\$(parse_git_branch)\[\$(tput sgr0)\]\$ "
 fi
 
 # for catting images with kitty
@@ -27,6 +28,8 @@ alias kitclip="kitty +kitten clipboard"
 source /usr/share/doc/pkgfile/command-not-found.bash
 
 alias open="xdg-open"
+alias v="nvim"
 
 # wait 300ms before repeating key press and then send that 35 times a second
-set r rate 300 35
+xset r rate 300 35
+

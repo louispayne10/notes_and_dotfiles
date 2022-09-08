@@ -5,6 +5,9 @@ I'd like at some point to have a script that takes a base arch linux install and
 
 The archinstall script seems to get locales wrong (at least mine) which causes issues. To fix this edit `/etc/locale.gen` so the `GB` locale says `en_GB.UTF-8 UTF-8` and then edit `/etc/locale.conf` and change the contents to `LANG=en_GB.UTF-8` and then reboot the machine.
 
+Dirty fix to weird flickering issue: https://bbs.archlinux.org/viewtopic.php?id=267296
+Note I didn't have this issue for a long time - then it suddenly happened. I was changing power settings and ambient sensor stuff as well as enabling blur on picom and all of a sudden it started happening, reverting each of these changes didnt seem to fix it but this dirty fix did - weird
+
 ### Core components:
 
 * Display Server: `X11` (with `xinit`,`xclip`)
@@ -20,6 +23,7 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * Init System: `systemd`
   * Also use for ntp, logging and much more
 * Nework Sofware: `NetworkManager`
+  * `nm-connection-editor` as a GUI
 * Terminal: [`kitty`](https://sw.kovidgoyal.net/kitty/overview/)
 * Shell: `bash`
   * install `bash-completion` for completion to work properly
@@ -30,9 +34,11 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
   * [`ranger`](https://github.com/ranger/ranger/wiki/Official-user-guide) for a CLI based (install `python-pillow` for image preview)
 * Bootloader: `grub`
 * Audio: `pipewire`
+  * Controlling audio with: `alsa`, `amixer`, `alsamixer` (can probably find something better), `gnome alsa mixer`
 * Screen locker:
   * `i3-lock-color`
   * `xss-lock`
+  * `xidle-hook`
 * Polkit: `polkit`,`lxqt-policykit`,`polkit-explorer-git`
 * notifications: `dunst`
 
@@ -45,8 +51,12 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * `yay` - AUR helper
 * `xdg-open`
 * `greenclip` - clipboard manager with rofi (AUR `rofi-greenclip`)
-* auto-cpufreq for power? ([power management in general](https://wiki.archlinux.org/title/Power_management))
+* `acpi` - battery info
 * `papirus-icon-theme` from AUR
+* bluetooth stuff - `bluez`, `bluez-utils` gives `bluetoothctl` which does almost everything, `blueman`
+* touchpad control - `xinput` `xinput --set-prop`
+* brightness tool - `brightnessctl`, `light`
+* power - `tlp` `powertop` `xfce4-power-manager`? (https://community.frame.work/t/linux-battery-life-tuning/6665/174?page=8)
 
 ### Other 'normal' software
 
@@ -56,10 +66,10 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * `plocate`
 * calculator - `kcalc` GUI or `python` interpreter
 * font-manager - `font-manager`
-* fonts: `nerd-fonts`, `adobe-source-code-pro-fonts`, `opensans`, `notosans`,`freesans`,`freemono`
+* fonts: `nerd-fonts`, `adobe-source-code-pro-fonts`, `opensans`, `notosans`,`freesans`,`freemono`, `JetBrainsMono`
 * Media player - `vlc`,(+ `libmicrodns`,`protobuf` for chromecast) (use `mpv` as a backup)
 * Image viewer - `qview` (AUR)
-* pdf viewer - `zathura`,`zathura-pdf-mupdf`,`zathura-cb`,`zathura-djvu`
+* pdf viewer - `zathura`,`zathura-pdf-mupdf`,`zathura-cb`,`zathura-djvu`, `Evince`
 * debugger - `seer` `gdbfrontend` `gdbgui` + try a non-graphical one like `cgdb` `gdbtui` or just `gdb` to learn about them
 * IDE - `neovim` `vscode`
 * browser - `firefox`
@@ -70,7 +80,7 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * virtual machines - `virtualbox`, `qemu` + `virtmanager`
 * color picker - `kcolorchooser`
 * screen recorder - `peek` for quick small gifs/vids, `obs-studio` for full recording
-* music - `cmus` `deadbeef` (AUR) `spotify` (which client - the official one sucks?)
+* music - `spotify`, `playerctl` to control it with bindings,rofi etc
 * disk usage display - `filelight`
 * chat - `discord`
 * developer tools - `binutils` `cmake` `valgrind` `kcachegrind` `wireshark`
@@ -80,24 +90,15 @@ The archinstall script seems to get locales wrong (at least mine) which causes i
 * disk partitioner - `cfdisk`
 * diff tool - `meld` (should I?) `vimdiff`
 * git gui - `vscode` or `vim` - can't find an OSS good gui
+* rss reader - `liferea`
 * notes - `joplin`
 * todo tool - `devtodo` (AUR)
-* Pomodoro timer? tomato?
-* volume control? like kmix?
 * webcam software - cheese?
 
 ### Can only do once on laptop
 
-* Setup volume, brightness, bluetooth and wifi on polybar (maybe have notifications when these change)
-* Setup bluetooth manageer (blueman)
-* Proper power settings `cpupower` `powertop` (https://community.frame.work/t/linux-battery-life-tuning/6665/174?page=8)
-* fprint for finger print?
-* `bluez`,`bluez-utils` and [polybar](https://github.com/msaitz/polybar-bluetooth) for [bluetooth](https://wiki.archlinux.org/title/bluetooth)
 * make multimonitor support work (might need to use `xrandr` to get it working - use rofi for menu - https://www.youtube.com/watch?v=wu2NWw2wPaA)
-* See if blur works with glx backend on real hardware
-* configure autolock time + make sure it doesnt do it while audio is playing or fullscreen
-* Test chromecast once on real hardware - see archwiki
-* mpd + mpd in polybar? basically get music working with polybar
+* autobrightness with ambient light sensor `monitor-sensor` `/sys/bus/iio/devices/iio:device0/in_illuminance_raw`
 
 ### Software to consider in future
 
