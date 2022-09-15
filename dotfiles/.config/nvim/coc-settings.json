@@ -1,0 +1,13 @@
+{
+    "clangd.inlayHints.enable": true,
+    //"clangd.arguments": ["--log=verbose"],
+    "suggest.maxCompleteItemCount": 30,
+    "coc.preferences.formatOnSaveFiletypes": [
+      "cpp",
+      "h"
+    ],
+    "git.enableGutters": true,
+    "clangd.path": "/opt/llvm/bin/clangd"
+    //"clangd.path": "/home/louis/dev/clones/llvm-project/build/bin/clangd"
+    //"clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/14.0.3/clangd_14.0.3/bin/clangd"
+}

@@ -209,6 +209,7 @@ for_window [title="GNOME ALSA Mixer"] floating enable
 for_window [class="org.gnome.Weather"] floating enable
 for_window [class="org.gnome.clocks"] floating enable
 for_window [title="Pomodoro"] floating enable
+for_window [class="seergbd"] floating enable
 
 floating_minimum_size 50 x 50
 floating_maximum_size 2000 x 1400
