@@ -70,7 +70,7 @@ Note I didn't have this issue for a long time - then it suddenly happened. I was
 * Media player - `vlc`,(+ `libmicrodns`,`protobuf` for chromecast) (use `mpv` as a backup)
 * Image viewer - `qview` (AUR)
 * pdf viewer - `zathura`,`zathura-pdf-mupdf`,`zathura-cb`,`zathura-djvu`, `Evince`
-* debugger - `seer` `gdbfrontend` `gdbgui` + try a non-graphical one like `cgdb` `gdbtui` or just `gdb` to learn about them
+* debugger - raw `gdb` and `gdb-tui`, `cgdb`, `qtcreator`, `gdbgui` (MAYBE)
 * IDE - `neovim` `vscode`
 * browser - `firefox`
 * office suite - `libreoffice`
@@ -108,7 +108,7 @@ Note I didn't have this issue for a long time - then it suddenly happened. I was
 * `alacritty` instead of `kitty`
 * `starship` to customise shell prompt
 * Consider not using a display manager and going straight into the wm
-* Give CLion, QtCreator a try
+* Give CLion a try as an editor and as a debugger
 
 ### Notes
 
